@@ -8,6 +8,7 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 const apiRouter = require('./routes/api');
 const dotenv = require('dotenv').config();
+const models = require('./src/models/index');
 
 var app = express();
 
@@ -30,7 +31,7 @@ const testlog = async() =>{
 }
 };
 
-console.log(testlog());
+testlog();
 /*****fin config*****/
 
 // view engine setup
